@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+nav a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000000de;
+    font-size: 13px;
+    
+}
+
+nav a:hover{
+    text-decoration: underline;
+    
+}
+
+.avatar-borda{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #ea4335 0deg 90deg,
+        #4285f4 90deg 180deg,
+        #34a853 180deg 270deg,
+        #fbbc05 270deg 360deg
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.avatar{
+    width: 30px;
+    height: 30px;
+    background-color: #fff; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    /* width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 5px; */
+}
+
+.avatar img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #fff;
+}
+
+.apps {
+    width: 20px;
+    height: 20px;
+    padding: 9px;
+    margin-left: 10px;
+}
+
+
+.apps:hover{
+    border-radius: 50%;
+    background-color: #d1d1d1;
+    cursor: pointer;
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 275px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 560px;
+}
+
+.search-box{
+    position: relative;
+    width: 100%;
+    max-width: 860px;
+    height: 52px;
+    margin: 5px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid#dadce0 ;
+    border-radius: 25px;
+    box-shadow: 0 1px 6px #dadce0;
+    padding: 0 10px;
+}
+
+.search-box input{
+    flex: 1;
+    border: none;
+    height: 44px;
+    font-size: 16px;
+    padding-left: 10px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.search-box:hover{
+    box-shadow: 0 0 8px #9b9b9b;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+}
+
+.icons .material-icons{
+    cursor: pointer;
+    padding: 0 8px;
+
+}
+
+.material-icons .teclado,
+.material-icons .microfone,
+.material-icons .camera,
+.material-icons .pesquisar{
+    width: 20px;
+}
+
+
+.buttons{
+    margin-top: 20px;
+}
+
+
+.buttons button{
+    margin: 11px 4px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #3c4043;
+    height: 36px;
+}
+
+.buttons button:hover{
+    border: 1px solid #cfcfcf;
+    box-shadow: 1px 1px 1px #cfcfcf ;
+}
+
+footer{
+    background: #eeeeee;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #1f1f1f;
+}
+
+footer p{
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+
+.informacoes{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
+    border-top: 1px solid #dadce0;
+}
+
+.informacoes a{
+    margin-right:  15px;
+    color: #1f1f1f;
+    text-decoration: none;
+}
+
+.informacoes a:hover{
+    text-decoration: underline;
+}
+
+.footer_area{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
+    border-top: 1px solid #dadce0;
+
+}
+
+.footer_area a{
+    text-decoration: none;
+    color: #1f1f1f;
+}
+
+.footer_area a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.btn-social button{
+    width: 20px;
+    height: 20px;
+    margin: 0px 15px 0 0;
+    border-radius: 30%;
+    border: none;
+    color: #4285F4;
+    background-color: #fff;
+    font-size: 10px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-social i{
+    font-size: 13px;
+    display: inline-block;
+}
+
+
+.btn-social button:hover{
+    box-shadow: 0px 0px 10px #858585;
+    transform: scale(1.05);
+    color: #fff;
+    background-color: #4285F4;
+}
